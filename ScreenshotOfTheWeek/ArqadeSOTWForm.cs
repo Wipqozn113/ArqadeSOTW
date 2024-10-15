@@ -55,7 +55,7 @@ namespace ScreenshotOfTheWeek
         }
 
         private void copyToClickboard_Click(object sender, EventArgs e)
-        {
+        { 
             var closeDate = DateTime.Now.AddDays(7).ToLongDateString();
             var finishDate = DateTime.Now.AddDays(14).ToLongDateString();
 
