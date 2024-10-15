@@ -59,7 +59,9 @@ namespace ScreenshotOfTheWeek
             var closeDate = DateTime.Now.AddDays(7).ToLongDateString();
             var finishDate = DateTime.Now.AddDays(14).ToLongDateString();
 
-            var template = $"Hello and welcome to the **{SOTWNumberWithPostFix}** edition of the Screenshot of the Week!" +
+            var template = "<!-- # This contest is over." +
+                "\r\n\r\n*[previous contest][contest prev] | [next contest][contest next]* -->" + 
+                $"\r\n\r\nHello and welcome to the **{SOTWNumberWithPostFix}** edition of the Screenshot of the Week!" +
                 $"\r\n\r\nTo start with, congratulations to the winner of the previous contest! [{Winner}][winning post]'s screenshot from [tag:{GameTag}] won with {Upvotes} upvotes! " +
                 "\r\n\r\n[![Last week's winning screenshot one][winning screenshot]][winning screenshot]" +
                 "\r\n\r\n---" +
